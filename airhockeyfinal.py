@@ -7,6 +7,7 @@ import numpy as np
 cv2.namedWindow('game')
 cv2.createTrackbar('Velocity', 'game',1,100,nothing) #Assigns the velocity trackbar to game window
 def nothing(x):
+	x=1
 	pass
 
 #in x,y
