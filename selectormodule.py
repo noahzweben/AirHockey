@@ -6,7 +6,7 @@ import cv2
 
 class ColorSelector:
 	"""A class that serves as an eyedropper mask tool. Allows user to 
-	select a color range dand then creates a mask based on that"""
+	select a color range and then creates a mask based on that"""
 
 	def __init__(self):
 
