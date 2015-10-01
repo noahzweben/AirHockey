@@ -2,17 +2,18 @@ from selectormodule import *
 import cv2
 import numpy as np 
 
+def nothing(x):
+	pass
 
 # Creates Velocity adjuster for ping pong ball
 cv2.namedWindow('game')
 cv2.createTrackbar('Velocity', 'game',1,100,nothing) #Assigns the velocity trackbar to game window
-def nothing(x):
-	x=12
-	pass
+
 
 #in x,y
 position = np.array([1,1])
 paddleX,paddleY = (0,0)
+xdrx,ydrx=[1,1]
 
 cap = cv2.VideoCapture(0)
 
@@ -71,4 +72,3 @@ while True:
 
 	if cv2.waitKey(10)==27:
 		break
-		
